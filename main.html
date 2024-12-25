@@ -8,14 +8,22 @@
 
 <body>
 	<div id="buttons">
-        <button class="btn" onclick="playSound('applause')">applause</button>
-        <button class="btn" onclick="playSound('boo')">boo</button>
-        <button class="btn" onclick="playSound('gasp')">gasp</button>
-        <button class="btn" onclick="playSound('tada')">tada</button>
-        <button class="btn" onclick="playSound('victory')">victory</button>
-        <button class="btn" onclick="playSound('wrong')">wrong</button>
-        <button class="stop" onclick="stopSound()">stop</button>
-    </div>
+		<button class="btn" data-sound="applause">applause</button>
+        <button class="btn" data-sound="boo">boo</button>
+        <button class="btn" data-sound="gasp">gasp</button>
+        <button class="btn" data-sound="tada">tada</button>
+        <button class="btn" data-sound="victory">victory</button>
+        <button class="btn" data-sound="wrong">wrong</button>
+        <button class="stop">stop</button>
+	</div>
+	<!-- Add audio elements for each sound -->
+	<audio id="applause" src="sounds/applause.wav"></audio>
+    <audio id="boo" src="sounds/boo.wav"></audio>
+    <audio id="gasp" src="sounds/gasp.wav"></audio>
+    <audio id="tada" src="sounds/tada.wav"></audio>
+    <audio id="victory" src="sounds/victory.wav"></audio>
+    <audio id="wrong" src="sounds/wrong.wav"></audio>
+
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js"></script>
 
